@@ -26,10 +26,17 @@ Execute a POST on endpoint
 
 Request body:
 
-```
+```json
 {
     "sentence": "I hate you!"
 }
+```
+Full Request:
+
+```sh
+curl -X POST -d '{"sentence": "I hate you!"}' \
+     -H 'Content-Type: application/json' \
+     http://localhost:5000/analyse/sentiment
 ```
 
 ## Pushing to Docker Hub
